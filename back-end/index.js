@@ -7,14 +7,6 @@ const fs = require('fs');
 app.use(cors());
 
 
-fs.readFile('food_dataset.txt', 'utf8', (err, data) => {
-    if (err) {
-        console.error(err);
-    } else {
-        const obj = JSON.parse(data);
-        return obj
-    }
-});
 
 
 app.get('/foodItems', async (req, res) => {
