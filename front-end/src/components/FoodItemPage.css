@@ -1,0 +1,76 @@
+.FoodItemPage{
+    background-color: #9DC08B;
+    width: 90%;
+    margin: 16px auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 0 0 15px 0;
+}
+
+.FoodItemPageTitle {
+    font-size: 24px;
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+
+}
+
+.FoodItemPageAvailability {
+    text-align: center;
+}
+
+.FoodItemPageAvailability > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.FoodItemPageImage {
+    width: auto;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.FoodItemPageDescription {
+    text-align: center;
+    font-style: italic;
+}
+
+.RatingSection{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 70%;
+    margin: 32px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.RatingButton {
+    padding: 15px;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.RatingPrompt {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.LikedButton {
+    background-color: #609966;
+}
+
+.DislikedButton {
+    background-color: lightcoral;
+}
+

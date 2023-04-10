@@ -1,0 +1,19 @@
+.Option{
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-size: 14px;
+    margin: 20px 5px 0px 5px;
+    background-color: lightgray;
+    /* when selected, #609966 */
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+
+
+}
+
+.Options{
+    display: flex;
+    justify-content: center;
+}
