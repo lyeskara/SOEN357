@@ -1,7 +1,19 @@
-# SOEN 357 Proto-type Palateventure
-## How to use:
+SOEN 357 Proto-type Palateventure
+Welcome to the Palateventure prototype project! This repository contains both the front-end and back-end code for the project. In order to get started, please follow the instructions below:
 
-- Open a command terminal or powershell, and navigate to the front-end folder
-- Make sure you have all the needed libraries installed (can be done by running "npm install" in this directory)
-- change directory into front-end folder and Type "npm start" into the terminal, and this should boot up the app
-- change directory into back-end folder and type "nodemon index.js" to start the server
+How to use:
+Open a command terminal or powershell, and navigate to the front-end folder.
+Make sure you have all the needed libraries installed by running the command below in the front-end directory:
+Copy code
+npm install
+Once all the libraries are installed, start the front-end server by typing the following command in the terminal:
+sql
+Copy code
+npm start
+To start the back-end server, change directory into the back-end folder and type the following command in the terminal:
+Copy code
+nodemon index.js
+Accessing the Application
+Once both the front-end and back-end servers are running, you should be able to access the Palateventure application by navigating to http://localhost:3000/ in your web browser.
+
+Happy Palateventuring!
