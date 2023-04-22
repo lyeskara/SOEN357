@@ -3,4 +3,5 @@
 
 - Open a command terminal or powershell, and navigate to the front-end folder
 - Make sure you have all the needed libraries installed (can be done by running "npm install" in this directory)
-- Type "npm start" into the terminal, and this should boot up the app
+- change directory into front-end folder and Type "npm start" into the terminal, and this should boot up the app
+- change directory into back-end folder and type "nodemon index.js" to start the server
