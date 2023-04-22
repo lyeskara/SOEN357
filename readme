@@ -1,1 +1,6 @@
-first commit
+# SOEN 357 Proto-type Palateventure
+##How to use:
+
+- Open a command terminal or powershell, and navigate to the front-end folder
+- Make sure you have all the needed libraries installed (can be done by running "npm install" in this directory)
+- Type "npm start" into the terminal, and this should boot up the app
