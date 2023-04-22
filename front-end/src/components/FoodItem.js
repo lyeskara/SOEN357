@@ -1,22 +1,75 @@
-import React from 'react';
-import './FoodItem.css'
-// Component found on the main page
-// Represents a food item
-// Food items are JSON objects within the food_dataset.txt
-// To populate a FoodItem component, we want to pass it a JSON object
-// representing a food item
+import React, { useState } from "react";
+import "./FoodItem.css";
+import FoodItemPage from "./FoodItemPage";
 
-function FoodItem({title, image}) {
-    return(
-      <div className={"FoodItem"} onClick={goToFood}>
-          <img src={image} alt="" className={"FoodImage"}/>
-          <p className={"FoodName"}>{title}</p>
+function FoodItem({ id, title, image, restaurantChain }) {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+    console.log("Opend");
+  };
+
+  const closePopup = (event) => {
+    event.stopPropagation();
+    setIsPopupOpen(false);
+    console.log("Closed");
+  };
+
+  const popupStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    height: "100%",
+    width: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+  const popupInnerStyle = {
+    backgroundColor: "#fff",
+    padding: "2rem",
+    borderRadius: "0.5rem",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
+  };
+
+  const style = {
+    backgroundSize: "cover",
+    height: "150px",
+    width: "150px",
+  };
+
+  return (
+    <div className={"FoodItem"} onClick={() => openPopup()}>
+      <img src={image} alt="" style={style} className={"FoodImage"} />
+      <div className={"FoodName"}>
+        <h3>{title}</h3>
+        <i>
+          <h5>From: {restaurantChain}</h5>
+        </i>
       </div>
-    );
-}
-
-function goToFood() {
-    alert("GO TO FOOD");
+      {isPopupOpen && (
+        <div className={"FoodItemPopup"} style={popupStyle}>
+          <div className={"FoodItemPopupInner"} style={popupInnerStyle}>
+            <button
+              className={"FoodItemPopupCloseButton"}
+              onClick={(event) => closePopup(event)}
+            >
+              X
+            </button>
+            <FoodItemPage
+              id={id}
+              title={title}
+              image={image}
+              restaurantChain={restaurantChain}
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default FoodItem;
