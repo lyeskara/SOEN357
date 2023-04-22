@@ -15,6 +15,7 @@ function FoodItemPage({ id, description, title, image, restaurantChain }) {
       localStorage.setItem("likedItems", JSON.stringify(likedItems));
     }
 
+    alert("Added to Likes");
     setIsLiked(true);
     setIsDisliked(false);
   };
@@ -29,6 +30,7 @@ function FoodItemPage({ id, description, title, image, restaurantChain }) {
       localStorage.setItem("dislikedItems", JSON.stringify(dislikedItems));
     }
 
+    alert("Added to Dislikes");
     setIsLiked(false);
     setIsDisliked(true);
   };
