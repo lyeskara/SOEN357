@@ -1,5 +1,5 @@
 # SOEN 357 Proto-type Palateventure
-##How to use:
+## How to use:
 
 - Open a command terminal or powershell, and navigate to the front-end folder
 - Make sure you have all the needed libraries installed (can be done by running "npm install" in this directory)
